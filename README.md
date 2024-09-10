@@ -41,7 +41,13 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 
 После открытия консоли требуется, скапировать все содеримое из файла `\migrations\wb_db_l0.sql` в консоль.
 
-Если все будет сделанно правельно, то высветится таокй ответ от консоли: **картинка в консоли**
+Если все будет сделанно правельно, то высветится: **картинка в консоли**
+
+Консоль можно закрыть прописав:
+
+```bash
+\q
+```
 
 ---
 **Шаг 4:** Запуск приложения
@@ -50,4 +56,70 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 
 ```bash
 $env:RUST_LOG="debug"; cargo run --bin wb_l0_service
+```
+
+Тестирование осуществляется через команду POST:
+
+```bash
+cargo run --bin test_api
+```
+
+Работу приложения можно проверить переийдя по `URL`
+
+```bash
+http://127.0.0.1:3000/
+```
+
+Результат работы приложения:
+
+```json
+[
+  {
+    "locale": "en",
+    "internal_signature": "sweew",
+    "customer_id": "cust_001",
+    "delivery_service": "DHL",
+    "shardkey": "key_001",
+    "sm_id": 585,
+    "date_created": "2023-09-03T12:00:00Z",
+    "oof_shard": "shard_001",
+    "order_uid": "testOrder999",
+    "track_number": "TRACK123",
+    "entry": "web",
+    "items": {
+      "chrt_id": 123,
+      "track_number": "TRACK123",
+      "price": 1000,
+      "rid": "RID123",
+      "name": "Item Name",
+      "sale": 10,
+      "size": "M",
+      "total_price": 900,
+      "nm_id": 456,
+      "brand": "Brand Name",
+      "status": 404
+    },
+    "payment": {
+      "transaction": "TRANS123",
+      "request_id": "REQ123",
+      "currency": "USD",
+      "provider": "VISA",
+      "amount": 900,
+      "payment_dt": 1633036800,
+      "bank": "Bank Name",
+      "delivery_cost": 50,
+      "goods_total": 950,
+      "custom_fee": 0
+    },
+    "delivery": {
+      "name": "John Doe",
+      "phone": "+1234567890",
+      "zip": "12345",
+      "city": "City",
+      "address": "123 Main St",
+      "region": "Region",
+      "email": "email@example.com"
+    }
+  }
+]
 ```
