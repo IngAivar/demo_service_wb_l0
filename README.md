@@ -28,9 +28,7 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 ---
 **Шаг 2**: Настройка приложения под свою машину
 
-Меняем пароли в файлах `.env` и `main.rs` (пароль от моей БД `12345` его нужно замениь на ваш)
-
-**картинка паролей**
+Меняем пароли в файлах [`.env`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_2.png) и [`main.rs`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_1.png) (пароль от моей БД `12345` его нужно замениь на ваш)
 
 ---
 **Шаг 3**: Создание БД через `SQL Shell`
