@@ -33,13 +33,13 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 ---
 **Шаг 3**: Создание БД через `SQL Shell`
 
-Запускаем службу `postgres` если она отключена **картинака службу**.
+Запускаем службу [`postgres`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/services.png) если она отключена.
 
 Открывем консоль `SQL Shell` это можно сделать через поисковик windows клавиша `Win` и написать SQL в поисковой строке.
 
 После открытия консоли требуется, скапировать все содеримое из файла `\migrations\wb_db_l0.sql` в консоль.
 
-Если все будет сделанно правельно, то высветится: **картинка в консоли**
+Если все будет сделанно правельно, консоль будет выглядеть [так](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/console.png).
 
 Консоль можно закрыть прописав:
 
