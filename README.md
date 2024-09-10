@@ -28,18 +28,18 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 ---
 **Шаг 2**: Настройка приложения под свою машину
 
-Меняем пароли в файлах [`.env`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_2.png) и [`main.rs`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_1.png) (пароль от моей БД `12345` его нужно замениь на ваш)
+Меняем пароли в файлах [`.env`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_2.png) и [`main.rs`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/password_1.png) (пароль от моей БД `12345` его нужно заменить на ваш)
 
 ---
 **Шаг 3**: Создание БД через `SQL Shell`
 
 Запускаем службу [`postgres`](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/services.png) если она отключена.
 
-Открывем консоль `SQL Shell` это можно сделать через поисковик windows клавиша `Win` и написать SQL в поисковой строке.
+Открываем консоль `SQL Shell` это можно сделать через поисковик windows клавиша `Win` и написать SQL в поисковой строке.
 
-После открытия консоли требуется, скапировать все содеримое из файла `\migrations\wb_db_l0.sql` в консоль.
+После открытия консоли требуется, скопировать все содержимое из файла `\migrations\wb_db_l0.sql` в консоль.
 
-Если все будет сделанно правельно, консоль будет выглядеть [так](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/console.png).
+Если все будет сделано правильно, консоль будет выглядеть [так](https://github.com/IngAivar/demo_service_wb_l0/blob/main/images/console.png).
 
 Консоль можно закрыть прописав:
 
@@ -50,7 +50,7 @@ https://github.com/IngAivar/demo_service_wb_l0.git
 ---
 **Шаг 4:** Запуск приложения
 
-Запуск окружения осуществляется через комманду:
+Запуск окружения осуществляется через команду:
 
 ```bash
 $env:RUST_LOG="debug"; cargo run --bin wb_l0_service
@@ -62,7 +62,7 @@ $env:RUST_LOG="debug"; cargo run --bin wb_l0_service
 cargo run --bin test_api
 ```
 
-Работу приложения можно проверить переийдя по `URL`
+Работу приложения можно проверить перейдя по `URL`
 
 ```bash
 http://127.0.0.1:3000/
@@ -111,7 +111,7 @@ http://127.0.0.1:3000/
     },
     "delivery": {
       "name": "John Doe",
-      "phone": "+1234567890",
+      "phone": "+67890",
       "zip": "12345",
       "city": "City",
       "address": "123 Main St",
